@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="se">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gloskoll</title>
+    <script src="renWorks.js" defer components="" id="renWorks" type="module"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/3.1.2/rollups/aes.js" ></script>
+    <script src="https://cdn.jsdelivr.net/gh/pocketbase/js-sdk@latest/dist/pocketbase.umd.js"></script>
+    <script src="index.js" defer type="module"></script>
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+<button class="spara" id="spara">Spara</button>
+<button class="ladda" id="ladda">Ladda</button>
+<div class="content">
+    <div class="tableDiv">
+        <table class="innerTable" style="border-style: groove; border-color: #d53737" id="innerTable" flex-centered>
+            <tbody>
+            <tr id="avoid">
+                <th></th>
+                <th scope="col" style="border-right-style: solid">Inte utförd</th>
+                <th scope="col" style="border-right-style: solid">Godkänd</th>
+                <th scope="col">Över godkänd</th>
+            </tr>
+            <tr id="avoid">
+                <th scope="row"><button id="new">+</button></th>
+            </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
+</body>
+
+</html>

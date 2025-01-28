@@ -1,0 +1,18 @@
+{
+  "name": "gloskoll-desktop",
+  "private": true,
+  "version": "0.1.0",
+  "type": "module",
+  "scripts": {
+    "tauri": "tauri"
+  },
+  "devDependencies": {
+    "@tauri-apps/cli": "^2"
+  },
+  "app": {
+    "withGlobalTauri": true
+  },
+  "dependencies": {
+    "@tauri-apps/plugin-http": "^2.3.0"
+  }
+}
