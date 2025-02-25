@@ -57,11 +57,7 @@ async function load() {
                         let decrypted = CryptoJS.AES.decrypt(obj.value, input.value).toString(CryptoJS.enc.Utf8)
                         decrypted_list.push(decrypted);
                     } catch (error) {
-                        let dialogue = createNewElementWithAttributes("dialog", {
-                            style: "red",
-                        }, null)
-                        dialogue.appendChild(createNewElementWithAttributes("p", {}, "Du skrev nog in fel lösenord eller så har någonting gått fel. Tekniska detaljer: " + error.toString().replace("Error:", "")))
-                        dialogue.showModal();
+                        console.log(error);
                     }
                 }
                 let objects = JSON.parse(`
