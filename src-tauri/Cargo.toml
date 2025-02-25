@@ -1,6 +1,6 @@
 [package]
 name = "gloskoll-desktop"
-version = "1.0"
+version = "1.0.0"
 description = "Skrivbordsappen för gloskoll"
 authors = ["Renen12"]
 edition = "2021"
